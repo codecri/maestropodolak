@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contatta Maestro Podolak e inizia la tua avventura nel trail running!">
+    <meta name="keywords" content="contatto, trail running, allenatore, corsa in montagna">
+    <meta name="author" content="Maestro Podolak">
+    <title>Contatto - Maestro Podolak</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Margine superiore per evitare la sovrapposizione con il menu */
+        #contatto {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigazione -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">MaestroPodolak.it</a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chi-sono">Chi sono</a></li>
+                <li><a href="index.html#come-funziona">Come funziona</a></li>
+                <li><a href="index.html#pacchetti">Pacchetti</a></li>
+                <li><a href="contatto.html">Contatto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sezione Contatto -->
+    <section id="contatto" class="contatto">
+        <div class="container">
+            <h2>Contatto</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nome e cognome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Messaggio:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Invia</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MaestroPodolak.it. Tutti i diritti riservati.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/zbigniew.podolak.5" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.strava.com/athletes/5827085" target="_blank"><i class="fab fa-strava"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script per il menu hamburger -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
